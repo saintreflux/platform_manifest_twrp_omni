@@ -27,13 +27,19 @@
   <project path="build" name="android_build" remote="omnirom" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  
+
+  <remove-project name="platform/build" />
+  <project path="build" name="android_build" remote="omnirom" revision="android-7.1" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
   <project path="android" name="android" remote="omnirom" />
 
   <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" groups="pdk-cw-fs"/>
@@ -65,7 +71,7 @@
   <!-- project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" /> -->
   <!-- project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" /> -->
   <!-- project path="device/sample" name="device/sample" groups="pdk" /> -->
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="TeamWin" />
+  <!-- <project path="device/qcom/common" name="android_device_qcom_common" remote="TeamWin" /> -->
   <!-- project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="external/aac" name="platform/external/aac" groups="pdk" /> -->
   <!-- project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" /> -->
@@ -180,7 +186,7 @@
   <!-- project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/libpng" name="android_external_libpng" remote="omnirom" groups="pdk" />
-  <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs,pdk-fs" />
+  <!-- <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <!-- project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs,pdk-fs" /> -->
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
