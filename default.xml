@@ -24,7 +24,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <project path="build" name="android_build" remote="omnirom" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -152,7 +152,7 @@
   <!-- project path="external/jhead" name="android_external_jhead" remote="omnirom" groups="pdk" /> -->
   <!-- project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" /> -->
   <!-- project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs,pdk-fs" /> -->
-  <project path="external/jpeg" name="android_external_jpeg" remote="omnirom" groups="pdk" />
+  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
   <!-- project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="external/jsmn" name="platform/external/jsmn" groups="pdk" /> -->
   <!-- project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs,pdk-fs" /> -->
@@ -200,7 +200,8 @@
   <project path="external/llvm" name="android_external_llvm" remote="omnirom" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="android_external_lz4" remote="omnirom" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/lzma" name="android_external_lzma" remote="omnirom" groups="pdk" />
+  <!-- project path="external/lzma" name="android_external_lzma" remote="omnirom" groups="pdk" /> -->
+  <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <!-- project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" /> -->
   <!-- project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" /> -->
@@ -243,7 +244,7 @@
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <!-- project path="external/scrypt" name="platform/external/scrypt" groups="pdk" /> -->
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
-  <project path="external/sepolicy" name="android_external_sepolicy" remote="omnirom" groups="pdk" />
+  <!-- <project path="external/sepolicy" name="android_external_sepolicy" remote="omnirom" groups="pdk" /> -->
   <!-- project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" /> -->
   <!-- project path="external/skia" name="android_external_skia" remote="omnirom" groups="pdk,qcom_msm8x26" /> -->
   <!-- project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" /> -->
@@ -478,6 +479,7 @@
   <!-- project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" /> -->
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" />
   <!-- project path="system/security" name="platform/system/security" groups="pdk" /> -->
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="omnirom" />
   <!-- project path="system/vold" name="android_system_vold" remote="omnirom" /> -->
   <!-- project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" /> -->
   <!-- project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" /> -->
@@ -493,7 +495,7 @@
   <!-- project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" /> -->
   <!-- project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" /> -->
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" /> -->
-  <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" />
+  <project path="vendor/omni" name="android_vendor_omni2" remote="omnirom" />
   <!-- project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" /> -->
 
 </manifest>
