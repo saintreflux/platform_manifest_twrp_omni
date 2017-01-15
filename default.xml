@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  
+  <remote  name="sub"
+           fetch="ssh://git@github.com" />
+  
   <remote  name="xda"
            fetch=".." />
 
@@ -16,7 +19,7 @@
            review="gerrit.twrp.me"
            fetch="https://github.com/TeamWin" />
 
-  <remote name="aosp"
+  <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
   <default revision="refs/tags/android-7.1.1_r6"
@@ -505,5 +508,9 @@
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" /> -->
   <project path="vendor/omni" name="android_vendor_omni2" remote="omnirom" />
   <!-- project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" /> -->
+
+<!-- ADD IN DEVICE-SPECIFIC REPOS  -->
+  <project name="sub77/android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="twrp/twrp-7.1" />
+  <project name="sub77/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="twrp/twrp-7.1" />
 
 </manifest>
