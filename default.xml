@@ -32,7 +32,7 @@
   <!-- project path="abi/cpp" name="platform/abi/cpp" groups="pdk" /> -->
   <!-- project path="art" name="android_art" remote="omnirom" revision="android-6.0" groups="pdk" /> -->
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-6.0" groups="pdk" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/>
+  <!-- <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs"/> -->
   <!-- project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" /> -->
   <!-- project path="dalvik" name="android_dalvik" remote="omnirom" revision="android-6.0" groups="pdk-cw-fs" /> -->
   <!-- project path="developers/build" name="platform/developers/build" /> -->
@@ -487,5 +487,9 @@
   <!-- project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" /> -->
   <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-6.0" />
   <!-- project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-6.0" /> -->
+
+  <!-- ADD IN MULTIROM REPOS  -->
+  <include name="multirom.xml" />
+  <include name="multirom-devices.xml" />
 
 </manifest>
