@@ -42,7 +42,7 @@
 
   <project path="android" name="android" remote="omnirom" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" groups="pdk-cw-fs"/>
+  <!-- <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" groups="pdk-cw-fs"/> -->
 
   <!-- project path="abi/cpp" name="platform/abi/cpp" groups="pdk" /> -->
   <!-- project path="art" name="android_art" remote="omnirom" groups="pdk" /> -->
@@ -514,5 +514,6 @@
 
   <!-- ADD IN DEVICE-SPECIFIC REPOS  -->
   <include name="twrp-devices.xml" />
+  <include name="twrp-multirom.xml" />
 
 </manifest>
