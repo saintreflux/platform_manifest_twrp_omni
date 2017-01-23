@@ -6,9 +6,9 @@
 
   <!-- ADD IN DEVICE-SPECIFIC REPOS  -->
   <project name="sub77/android_device_motorola_falcon" path="device/motorola/falcon" remote="sub" revision="mrom/mr-6.0" />
-  <project name="sub77/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="twrp/twrp-7.1" />
+  <project name="sub77/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="sub" revision="mrom/mr-6.0" />
 
-  <project name="sub77/android_device_samsung_matisse" path="device/samsung/matisse" remote="sub" revision="twrp/twrp-7.1" />
-  <project name="sub77/android_kernel_samsung_msm8226" path="kernel/samsung/msm8226" remote="sub" revision="twrp/twrp-7.1" />
+  <project name="sub77/android_device_samsung_matisse" path="device/samsung/matisse" remote="sub" revision="mrom/mr-6.0" />
+  <project name="sub77/android_kernel_samsung_msm8226" path="kernel/samsung/msm8226" remote="sub" revision="mrom/mr-6.0" />
 
 </manifest>
