@@ -515,7 +515,7 @@
   <remote  name="sub"
            fetch="ssh://git@github.com" />
 <!-- ADD IN DEVICE-SPECIFIC REPOS  -->
-  <project path="vendor/extra" name="sub77/vendor_extra" remote="sub" revision="twrp-7.1" >
+  <project path="vendor/extra" name="sub77/vendor_extra" remote="sub" revision="twrp/mr-7.1" >
     <copyfile src="manifests/twrp-7.1.xml" dest=".repo/local_manifests/twrp-7.1.xml" />
   </project>
 </manifest>
